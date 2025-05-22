@@ -43,11 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aman\Interior\Data\Attacks.cs" />
+    <Compile Include="Aman\Interior\Data\Munitions.cs" />
+    <Compile Include="Aman\Exterior\Data\Reports.cs" />
+    <Compile Include="Aman\Exterior\Actions\NewReport.cs" />
+    <Compile Include="Aman\Exterior\Actions\OrderAttack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IDF\Roles.cs" />
+    <Compile Include="IDF\StrikeUinit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Aman\Interior\Actions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

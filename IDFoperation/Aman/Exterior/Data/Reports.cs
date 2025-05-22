@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IDFoperation.Aman.Exterior.Actions;
 
-namespace IDFoperation.Aman.ForeignIntelligence
+namespace IDFoperation.Aman.Exterior.Data
 {
-    internal class Reports
+    static class Reports
     {
+        public static List<NewReport> reports = new List<NewReport>();
     }
 }
+

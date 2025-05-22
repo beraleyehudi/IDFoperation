@@ -3,23 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IDFoperation.Aman.Exterior.Data;
 
-namespace IDFoperation.Aman.ForeignIntelligence
+namespace IDFoperation.Aman.Exterior.Actions
 {
-    internal class NewReport
+    public class NewReport
     {
-        public Terorist terorist;
+        //public Terorist terorist;
         public string Location;
         public string ReportTime;
 
         public NewReport(
-            Terorist terorist,
+            //Terorist terorist,
             string location,
             string reportTime)
         {
-            this.terorist = terorist;
+            //this.terorist = terorist;
             Location = location;
             ReportTime = reportTime;
+            //Reports reports = new Reports();
+            Reports.reports.Add(this);
+
         }
     }
 

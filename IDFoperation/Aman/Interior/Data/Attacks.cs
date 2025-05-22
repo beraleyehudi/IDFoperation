@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IDFoperation.Aman.Exterior.Actions;
 
-namespace IDFoperation.Aman.DomesticIntelligence
+namespace IDFoperation.Aman.Interior.Data
 {
-    internal class Attacks
+    public class Attacks
     {
+        public List<OrderAttack> attacks = new List<OrderAttack>();
+
     }
 }
