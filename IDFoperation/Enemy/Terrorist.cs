@@ -10,10 +10,10 @@ namespace IDFoperation.Enemy
     {
         public string Name { get; private set; }
         public int Rank {get; private set; }
-        public string Status { get; private set; }
+        public Enums.TerroristStatus Status { get; private set; }
         public List<Enums.WeaponType> Weapons { get; set; }
 
-        public Terrorist(string name, int rank, string status, List<Enums.WeaponType> weapons)
+        public Terrorist(string name, int rank,Enums.TerroristStatus status, List<Enums.WeaponType> weapons)
         {
             Name = name;
             Rank = rank;
@@ -25,12 +25,12 @@ namespace IDFoperation.Enemy
         {
             Console.WriteLine($"Name of the terorist: {Name}");
             Console.WriteLine($"Rank of the terorist: {Rank}");
-            Console.WriteLine($"Statuseof the terorist: {Status}");
+            Console.WriteLine($"Statuseof the terorist: {Status.ToString()}");
             Console.Write($"Weapons of the terorist: ");
-            //foreach (var i in Weapons)
-            //{
-            //    Console.Write();
-            //}
+            foreach (var i in Weapons)
+            {
+                Console.Write(i.ToString() + " ");
+            }
         }
     }
 }

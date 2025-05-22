@@ -10,9 +10,9 @@ namespace IDFoperation.Enemy
 {
     abstract class  TerrorOrganization
     {
-        public string FullName { get; private set; }
-        public string DateOfFormation {  get; private set; }
-        public string CurrentCommander {  get; private set; }
+        public string FullName {get; private set;}
+        public string DateOfFormation {get; private set; }
+        public string CurrentCommander {get; private set; }
         public List<Terrorist> TerroristsList { get;private  set; }
 
         public TerrorOrganization(string fullName, string dateOfFormation, string currentCommander, List<Terrorist> terroristsList )
