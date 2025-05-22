@@ -1,1 +1,51 @@
+
 .vs/
+*.suo
+*.user
+*.resharper
+*.dotsettings
+*.webtest
+*.loadtest
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+Build/
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.exp
+*.dll
+*.exe
+*.msi
+*.tlb
+*.tlh
+*.bak
+*.log
+*.ncb
+*.opendb
+*.sdf
+ipch/
+*.aps
+*.bsc
+*.sbr
+*.idb
+*.pch
+*.pgd
+*.tlog
+
+# NuGet packages
+packages/
+# if you are using PackageReference, this might not be necessary
+# but if using packages.config, this folder can be huge
+
+# Rider and other JetBrains IDEs
+.idea/
+*.iml
+
+# Mac OS
+.DS_Store
