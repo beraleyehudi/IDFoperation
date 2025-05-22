@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\IDFoperation\\IDFoperation\\",
+  "WorkspaceRootPath": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|c:\\users\\user\\desktop\\idfoperation\\idfoperation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|c:\\developement\\kodecode\\homeworks\\projectfirststrike\\idfoperation\\enemy\\hamasorganization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|solutionrelative:enemy\\hamasorganization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\enemy\\terrorist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|solutionrelative:enemy\\terrorist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\enemy\\terrororganization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|solutionrelative:enemy\\terrororganization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\enemy\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A58005-7C49-4437-AD92-023B94A9D12A}|IDFoperation.csproj|solutionrelative:enemy\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-22T06:10:10.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TerrorOrganization.cs",
+              "DocumentMoniker": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\TerrorOrganization.cs",
+              "RelativeDocumentMoniker": "Enemy\\TerrorOrganization.cs",
+              "ToolTip": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\TerrorOrganization.cs",
+              "RelativeToolTip": "Enemy\\TerrorOrganization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:21:57.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Terrorist.cs",
+              "DocumentMoniker": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\Terrorist.cs",
+              "RelativeDocumentMoniker": "Enemy\\Terrorist.cs",
+              "ToolTip": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\Terrorist.cs*",
+              "RelativeToolTip": "Enemy\\Terrorist.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:17:12.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HamasOrganization.cs",
+              "DocumentMoniker": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\HamasOrganization.cs",
+              "RelativeDocumentMoniker": "Enemy\\HamasOrganization.cs",
+              "ToolTip": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\HamasOrganization.cs*",
+              "RelativeToolTip": "Enemy\\HamasOrganization.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T11:02:50.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\Enums.cs",
+              "RelativeDocumentMoniker": "Enemy\\Enums.cs",
+              "ToolTip": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Enemy\\Enums.cs",
+              "RelativeToolTip": "Enemy\\Enums.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T08:44:14.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\IDFoperation\\IDFoperation\\Program.cs",
+              "DocumentMoniker": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\IDFoperation\\IDFoperation\\Program.cs",
+              "ToolTip": "C:\\developement\\kodecode\\homeworks\\projectFirstStrike\\IDFoperation\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T08:09:59.121Z",
               "EditorCaption": ""

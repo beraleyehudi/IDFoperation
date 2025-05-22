@@ -1,0 +1,8 @@
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\bin\Debug\IDFoperation.exe.config
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\bin\Debug\IDFoperation.exe
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\bin\Debug\IDFoperation.pdb
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.csproj.AssemblyReference.cache
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.csproj.CoreCompileInputs.cache
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.exe
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.pdb
+C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.exe.config
