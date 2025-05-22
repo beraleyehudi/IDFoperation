@@ -18,7 +18,6 @@ namespace IDFoperation.Enemy
                 new List<Terrorist>()
                 )
                {
-                   HamasOrganization hamas = new HamasOrganization();
                }
     }
 }

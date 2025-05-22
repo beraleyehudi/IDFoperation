@@ -19,6 +19,7 @@ namespace IDFoperation.Enemy
             Rank = rank;
             Status = status;
             Weapons = weapons;
+ 
         }
 
         public void DisplayInfo()
