@@ -5,32 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 using IDFoperation.IDF;
 using IDFoperation.Aman.Interior.Data;
-using IDFoperation.Enemy;
 
 namespace IDFoperation.Aman.Exterior.Actions
 {
     public class OrderAttack
     {
         string TimeOrder;
-        Terrorist terrorist;
+        //Trorist trorist;
         string munition;
         OperationsOfficer operationsOfficer;
         NewReport intelligenceReport;
 
         public OrderAttack(
             string timeOrder,
-            Terrorist terrorist,
+            //Trorist trorist,
             string munition,
             OperationsOfficer operationsOfficer,
             NewReport intelligenceReport)
         {
             this.TimeOrder = timeOrder;
-            this.terrorist = terrorist;
+            //this.trorist = trorist;
             this.munition = munition;
             this.operationsOfficer = operationsOfficer;
             this.intelligenceReport = intelligenceReport;
 
-            Attacks.AddAttack(this);
+            Attacks attacks = new Attacks();
+            attacks.attacks.Add(this);
         }
     }
 }

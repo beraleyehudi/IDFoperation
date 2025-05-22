@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 using IDFoperation.Aman.Exterior.Actions.Data;
 using IDFoperation.Enemy;
 
-
 namespace IDFoperation.Aman.Exterior.Actions
 {
     public class NewReport
     {
-        public Terrorist terrorist{ get; private set; }
-        public string Location { get; private set; }
-        public string ReportTime { get; private set; }
+        public Terrorist terrorist;
+        public string Location;
+        public string ReportTime;
 
-        public NewReport(Terrorist terrorist,string location,string reportTime)
+        public NewReport(
+            Terrorist terrorist,
+            string location,
+            string reportTime)
         {
             this.terrorist = terrorist;
             Location = location;
             ReportTime = reportTime;
-
             Reports.AddReport(this);
 
         }
