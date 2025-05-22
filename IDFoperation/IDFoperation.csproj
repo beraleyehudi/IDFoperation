@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enemy\Terrorist.cs" />
+    <Compile Include="Enemy\TerrorOrganization.cs" />
+    <Compile Include="Enemy\HamasOrganization.cs" />
+    <Compile Include="Enemy\Enums.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

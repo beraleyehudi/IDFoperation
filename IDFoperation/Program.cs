@@ -10,6 +10,7 @@ namespace IDFoperation
     {
         static void Main(string[] args)
         {
+          //HamasOrganization hamas = new HamasOrganization();
         }
     }
 }
