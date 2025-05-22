@@ -43,10 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aman\Exterior\Data\Reports.cs" />
+    <Compile Include="Aman\Exterior\Actions\NewReport.cs" />
+    <Compile Include="Aman\Exterior\Actions\OrderAttack.cs" />
+    <Compile Include="Aman\Interior\Data\Attacks.cs" />
+    <Compile Include="Aman\Interior\Data\Munitations.cs" />
     <Compile Include="Enemy\Terrorist.cs" />
     <Compile Include="Enemy\TerrorOrganization.cs" />
     <Compile Include="Enemy\HamasOrganization.cs" />
     <Compile Include="Enemy\Enums.cs" />
+    <Compile Include="IDF\Roles.cs" />
+    <Compile Include="IDF\StrikUinit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
