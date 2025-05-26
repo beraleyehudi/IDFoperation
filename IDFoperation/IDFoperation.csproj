@@ -48,6 +48,9 @@
     <Compile Include="Aman\Exterior\Actions\OrderAttack.cs" />
     <Compile Include="Aman\Interior\Data\Attacks.cs" />
     <Compile Include="Aman\Interior\Data\Munitations.cs" />
+    <Compile Include="AuxiliaryFunctions\All.cs" />
+    <Compile Include="Controller\Menages.cs" />
+    <Compile Include="CreatingObjects.cs" />
     <Compile Include="Enemy\Terrorist.cs" />
     <Compile Include="Enemy\TerrorOrganization.cs" />
     <Compile Include="Enemy\HamasOrganization.cs" />
@@ -60,5 +63,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
