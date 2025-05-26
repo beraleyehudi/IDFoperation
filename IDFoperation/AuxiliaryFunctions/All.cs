@@ -63,7 +63,7 @@ namespace IDFoperation.AuxiliaryFunctions
                     mostDangerous = terrorist1;
                 }
             }
-            mostDangerous.DisplayInfo();
+            //mostDangerous.DisplayInfo();
             return mostDangerous;
         }
 
@@ -80,14 +80,14 @@ namespace IDFoperation.AuxiliaryFunctions
                 }
             }
 
-            theTerrorist.DisplayInfo();
+            //theTerrorist.DisplayInfo();
             return theTerrorist;
 
 
         }
 
         public static string[] typeStrike = { "F16", "Zik drone", "Artillery" };
-        public static StrikeUinit ChoosingAttackTool()
+        public static StrikeInit ChoosingAttackTool()
         {
           
             string typeChoice = PrintMenu("Select attack tool type", typeStrike) ;
@@ -101,12 +101,11 @@ namespace IDFoperation.AuxiliaryFunctions
 
         }
 
-        public static Terrorist WantedTerrorist(OperationsOfficer operationsOfficer)
+        public static Terrorist WantedTerrorist()
         {
             string[] options = new string[]{
                 "The terrorist with the highest number of reports",
-                "The most dangerous terrorist",
-                "Exit"};
+                "The most dangerous terrorist"};
 
             string choice = PrintMenu("Who is being attacked today?", options);
 
@@ -121,6 +120,29 @@ namespace IDFoperation.AuxiliaryFunctions
 
             }
             return null;
+
+        }
+
+        public static void AttackTerrorist(OperationsOfficer operationsOfficer)
+        {
+            Terrorist terrorist = WantedTerrorist();
+            StrikeInit strikeInit = ChoosingAttackTool();
+            NewReport lastReport = Reports.GetlastReport(terrorist);
+           
+
+            OrderAttack orderAttack = new OrderAttack
+                (
+                terrorist,
+                strikeInit,
+                operationsOfficer,
+
+                lastReport
+
+                );
+            Console.WriteLine("secces");
+            strikeInit.Attack();
+            terrorist.UpdateTerroristStatus();
+
 
         }
 

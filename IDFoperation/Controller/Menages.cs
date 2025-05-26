@@ -17,52 +17,46 @@ namespace IDFoperation.Controller
        
         public static void Menage(OperationsOfficer operationsOfficer)
         {
-            bool exit;
-            Terrorist theTerrosit = null;
-            StrikeUinit strikeUinit = null;
+            bool exit = false;
             do
             {
 
-                exit = true;
-                string choice = All.PrintMenu("menu", new string[] { "The terrorist with the highest number of reports", "The most dangerous terrorist", "All attack tools"});
+               
+                string choice = All.PrintMenu("menu", new string[] { "The terrorist with the highest number of reports", "The most dangerous terrorist", "All attack tools", "Attack", "Exit"});
 
                 switch (choice)
                 {
                     case "The terrorist with the highest number of reports":
-                        theTerrosit = All.MostReports();
+                        All.MostReports().DisplayInfo();
+
                         break;
                        
-
-
                     case "The most dangerous terrorist":
-                        theTerrosit = All.MostDangerous();
+                        All.MostDangerous().DisplayInfo();
                         break;
                        
 
 
                     case "All attack tools":
                         Munitions.GetMunitionsData(All.typeStrike);
-                        exit = false;
                         break;
+
+                    case "Attack":
+                        All.AttackTerrorist(operationsOfficer);
+                        break;
+
+                    case "Exit":
+                        exit = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("");
+                        break;
+
+
                 }
             } while (!exit);
 
-            strikeUinit = All.ChoosingAttackTool();
-
-            NewReport lastReport = Reports.reports[theTerrosit][Reports.reports[theTerrosit].Count - 1];
-
-            OrderAttack orderAttack = new OrderAttack
-                (
-                theTerrosit,
-                strikeUinit,
-                operationsOfficer,
-
-                lastReport
-
-                );
-            Console.WriteLine("secces");
-            strikeUinit.Attack();
-            theTerrosit.UpdateTerroristStatus();
             return;
 
         }

@@ -13,13 +13,13 @@ namespace IDFoperation.Aman.Exterior.Actions
     {
         DateTime TimeOrder;
         Terrorist terrorist;
-        StrikeUinit munition;
+        StrikeInit munition;
         OperationsOfficer operationsOfficer;
         NewReport intelligenceReport;
 
         public OrderAttack(
             Terrorist terrorist,
-            StrikeUinit munition,
+            StrikeInit munition,
             OperationsOfficer operationsOfficer,
             NewReport intelligenceReport)
         {

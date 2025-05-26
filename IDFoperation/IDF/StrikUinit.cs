@@ -8,15 +8,22 @@ using IDFoperation.Aman.Interior.Data;
 
 namespace IDFoperation.IDF
 {
+    public enum Efficiency
+    {
+        structurs,
+        people,
+        openAreas
 
-    public abstract class StrikeUinit
+    }
+
+    public abstract class StrikeInit
     {
         
         public string CodeName;
-        public string Efficiency;
+        public Efficiency Efficiency;
         public int AvailableAttacks;
 
-        public StrikeUinit(string codeName)
+        public StrikeInit(string codeName)
         {
             this.CodeName = codeName;
             //Munitions.IdfMunitions.Add(this);
@@ -26,11 +33,11 @@ namespace IDFoperation.IDF
 
         public abstract void Attack();
 
-        public void Add(string type, StrikeUinit current)
+        public void Add(string type, StrikeInit current)
         {
             if (!Munitions.munitions.ContainsKey(type))
             {
-                Munitions.munitions[type] = new List<StrikeUinit>() { current};
+                Munitions.munitions[type] = new List<StrikeInit>() { current};
 
             }
             else
@@ -43,12 +50,12 @@ namespace IDFoperation.IDF
 
     }
 
-    public class F16 : StrikeUinit
+    public class F16 : StrikeInit
     {
         public F16(string codeName) : base(codeName)
         {
             this.CodeName = codeName;
-            this.Efficiency = "structures";
+            this.Efficiency = Efficiency.structurs;
             this.AvailableAttacks = 8;
             Add("F16", this);
         }
@@ -61,12 +68,12 @@ namespace IDFoperation.IDF
         }
     }
 
-    public class ZikDrone : StrikeUinit
+    public class ZikDrone : StrikeInit
     {
         public ZikDrone(string codeName) : base(codeName)
         {
             this.CodeName = codeName;
-            this.Efficiency = "people, vehicles";
+            this.Efficiency = Efficiency.people;
             this.AvailableAttacks = 3;
 
             Add("Zik drone", this);
@@ -78,12 +85,12 @@ namespace IDFoperation.IDF
         }
     }
 
-    public class Artillery : StrikeUinit
+    public class Artillery : StrikeInit
     {
         public Artillery(string codeName) : base(codeName)
         {
             this.CodeName = codeName;
-            this.Efficiency = "open areas";
+            this.Efficiency = Efficiency.openAreas;
             this.AvailableAttacks = 40;
             Add("Artillery", this);
         }
