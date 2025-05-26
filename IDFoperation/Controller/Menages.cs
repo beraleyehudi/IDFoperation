@@ -47,13 +47,6 @@ namespace IDFoperation.Controller
                 }
             } while (!exit);
 
-
-                    
-
-
-
-
-
             strikeUinit = All.ChoosingAttackTool();
 
             NewReport lastReport = Reports.reports[theTerrosit][Reports.reports[theTerrosit].Count - 1];
@@ -69,6 +62,7 @@ namespace IDFoperation.Controller
                 );
             Console.WriteLine("secces");
             strikeUinit.Attack();
+            theTerrosit.UpdateTerroristStatus();
             return;
 
         }
@@ -76,6 +70,13 @@ namespace IDFoperation.Controller
     }
 }
             
+
+                    
+
+
+
+
+
 
 
 
