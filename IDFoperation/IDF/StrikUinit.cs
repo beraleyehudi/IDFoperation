@@ -11,7 +11,7 @@ namespace IDFoperation.IDF
 
     public abstract class StrikeUinit
     {
-        //public static List<StrikeUinit> idfWeapons = new List<StrikeUinit>();
+        
         public string CodeName;
         public string Efficiency;
         public int AvailableAttacks;
@@ -19,11 +19,27 @@ namespace IDFoperation.IDF
         public StrikeUinit(string codeName)
         {
             this.CodeName = codeName;
-            Munitions.IdfMunitions.Add(this);
+            //Munitions.IdfMunitions.Add(this);
+            //public abstract void AddToData();
 
         }
 
         public abstract void Attack();
+
+        public void Add(string type, StrikeUinit current)
+        {
+            if (!Munitions.munitions.ContainsKey(type))
+            {
+                Munitions.munitions[type] = new List<StrikeUinit>() { current};
+
+            }
+            else
+            {
+                Munitions.munitions[type].Add(current);
+
+            }
+
+        }
 
     }
 
@@ -34,7 +50,42 @@ namespace IDFoperation.IDF
             this.CodeName = codeName;
             this.Efficiency = "structures";
             this.AvailableAttacks = 8;
-            Munitions.IdfMunitions.Add(this);
+            Add("F16", this);
+        }
+
+        
+
+        public override void Attack()
+        {
+            AvailableAttacks--;
+        }
+    }
+
+    public class ZikDrone : StrikeUinit
+    {
+        public ZikDrone(string codeName) : base(codeName)
+        {
+            this.CodeName = codeName;
+            this.Efficiency = "people, vehicles";
+            this.AvailableAttacks = 3;
+
+            Add("Zik drone", this);
+
+        }
+        public override void Attack()
+        {
+            AvailableAttacks--;
+        }
+    }
+
+    public class Artillery : StrikeUinit
+    {
+        public Artillery(string codeName) : base(codeName)
+        {
+            this.CodeName = codeName;
+            this.Efficiency = "open areas";
+            this.AvailableAttacks = 40;
+            Add("Artillery", this);
         }
 
         public override void Attack()

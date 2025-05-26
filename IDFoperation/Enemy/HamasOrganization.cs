@@ -14,10 +14,16 @@ namespace IDFoperation.Enemy
         public HamasOrganization() : base(
                 "Islamic Resistance Movement",
                 "1987",
-                "Ismail haniya",
-                new List<Terrorist>()
+                "Ismail haniya"
+                //new List<Terrorist>()
                 )
                {
                }
+
+        public static List<Terrorist> terrorists = new List<Terrorist>();
+        public static List<Terrorist> GetTerrorists()
+        {
+            return terrorists;
+        }
     }
 }

@@ -11,26 +11,27 @@ namespace IDFoperation.Aman.Exterior.Actions
 {
     public class OrderAttack
     {
-        string TimeOrder;
+        DateTime TimeOrder;
         Terrorist terrorist;
-        string munition;
+        StrikeUinit munition;
         OperationsOfficer operationsOfficer;
         NewReport intelligenceReport;
 
         public OrderAttack(
-            string timeOrder,
             Terrorist terrorist,
-            string munition,
+            StrikeUinit munition,
             OperationsOfficer operationsOfficer,
             NewReport intelligenceReport)
         {
-            this.TimeOrder = timeOrder;
+            this.TimeOrder = DateTime.Now;
             this.terrorist = terrorist;
             this.munition = munition;
             this.operationsOfficer = operationsOfficer;
             this.intelligenceReport = intelligenceReport;
 
             Attacks.AddAttack(this);
+            Attacks.last = (this);
+            Console.WriteLine("An attack order was placed"); //בדיקה
         }
     }
 }

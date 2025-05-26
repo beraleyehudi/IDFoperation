@@ -13,15 +13,16 @@ namespace IDFoperation.Aman.Exterior.Actions
     {
         public Terrorist terrorist{ get; private set; }
         public string Location { get; private set; }
-        public string ReportTime { get; private set; }
+        public DateTime ReportTime { get; private set; }
 
-        public NewReport(Terrorist terrorist,string location,string reportTime)
+        public NewReport(Terrorist terrorist,string location)
         {
             this.terrorist = terrorist;
             Location = location;
-            ReportTime = reportTime;
+            ReportTime = DateTime.Now;
 
-            Reports.AddReport(this);
+            Reports.AddReport(terrorist, this);
+            //Reports.last(this);
 
         }
     }

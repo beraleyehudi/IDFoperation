@@ -6,3 +6,17 @@ C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDF
 C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.exe
 C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.pdb
 C:\developement\kodecode\homeworks\projectFirstStrike\IDFoperation\obj\Debug\IDFoperation.exe.config
+C:\Users\User\Source\Repos\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe.config
+C:\Users\User\Source\Repos\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe
+C:\Users\User\Source\Repos\IDFoperation\IDFoperation\bin\Debug\IDFoperation.pdb
+C:\Users\User\Source\Repos\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\IDFoperation\IDFoperation\obj\Debug\IDFoperation.exe
+C:\Users\User\Source\Repos\IDFoperation\IDFoperation\obj\Debug\IDFoperation.pdb
+C:\Users\User\Desktop\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe.config
+C:\Users\User\Desktop\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe
+C:\Users\User\Desktop\IDFoperation\IDFoperation\bin\Debug\IDFoperation.pdb
+C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.exe
+C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.pdb

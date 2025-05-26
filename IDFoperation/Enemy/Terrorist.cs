@@ -19,6 +19,8 @@ namespace IDFoperation.Enemy
             Rank = rank;
             Status = status;
             Weapons = weapons;
+            HamasOrganization.terrorists.Add(this);
+
  
         }
 
@@ -26,12 +28,13 @@ namespace IDFoperation.Enemy
         {
             Console.WriteLine($"Name of the terorist: {Name}");
             Console.WriteLine($"Rank of the terorist: {Rank}");
-            Console.WriteLine($"Statuseof the terorist: {Status.ToString()}");
+            Console.WriteLine($"Statuse of the terorist: {Status.ToString()}");
             Console.Write($"Weapons of the terorist: ");
             foreach (var i in Weapons)
             {
                 Console.Write(i.ToString() + " ");
             }
+            Console.WriteLine();
         }
     }
 }
