@@ -20,6 +20,7 @@ C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.As
 C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.exe
 C:\Users\User\Desktop\IDFoperation\IDFoperation\obj\Debug\IDFoperation.pdb
+<<<<<<< HEAD
 C:\developement\kodecode\homeworks\finalIDF\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe.config
 C:\developement\kodecode\homeworks\finalIDF\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe
 C:\developement\kodecode\homeworks\finalIDF\IDFoperation\IDFoperation\bin\Debug\IDFoperation.pdb
@@ -28,3 +29,12 @@ C:\developement\kodecode\homeworks\finalIDF\IDFoperation\IDFoperation\obj\Debug\
 C:\developement\kodecode\homeworks\finalIDF\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.CoreCompileInputs.cache
 C:\developement\kodecode\homeworks\finalIDF\IDFoperation\IDFoperation\obj\Debug\IDFoperation.exe
 C:\developement\kodecode\homeworks\finalIDF\IDFoperation\IDFoperation\obj\Debug\IDFoperation.pdb
+=======
+C:\Users\User\Desktop\IDFOperation\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe.config
+C:\Users\User\Desktop\IDFOperation\IDFoperation\IDFoperation\bin\Debug\IDFoperation.exe
+C:\Users\User\Desktop\IDFOperation\IDFoperation\IDFoperation\bin\Debug\IDFoperation.pdb
+C:\Users\User\Desktop\IDFOperation\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\IDFOperation\IDFoperation\IDFoperation\obj\Debug\IDFoperation.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\IDFOperation\IDFoperation\IDFoperation\obj\Debug\IDFoperation.exe
+C:\Users\User\Desktop\IDFOperation\IDFoperation\IDFoperation\obj\Debug\IDFoperation.pdb
+>>>>>>> 607effbced609e82bd23f861c7b7420f172ec0b7

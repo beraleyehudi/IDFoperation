@@ -11,8 +11,8 @@ namespace IDFoperation.Aman.Interior.Data
     {
  
 
-        public static Dictionary<string, List<StrikeUinit>> munitions =
-            new Dictionary<string, List<StrikeUinit>>();
+        public static Dictionary<string, List<StrikeInit>> munitions =
+            new Dictionary<string, List<StrikeInit>>();
 
         public static void GetMunitionsData(string[] typs)
         {
@@ -22,7 +22,7 @@ namespace IDFoperation.Aman.Interior.Data
            
                 int i = 1;
                 Console.WriteLine($"{type}:");
-                foreach (StrikeUinit s in munitions[type])
+                foreach (StrikeInit s in munitions[type])
                 {
                     Console.WriteLine(i + ": ");
                     Console.WriteLine($"code name: {s.CodeName}| available attacks: {s.AvailableAttacks}");

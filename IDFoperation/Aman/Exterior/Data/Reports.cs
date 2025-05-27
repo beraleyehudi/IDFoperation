@@ -11,7 +11,11 @@ namespace IDFoperation.Aman.Exterior.Actions.Data
     {
     //    private static List<NewReport> reports = new List<NewReport>();
         public static Dictionary<Terrorist, List<NewReport>> reports = new Dictionary<Terrorist, List<NewReport>>();
-        public static NewReport last;
+
+        public static NewReport GetlastReport(Terrorist terrorist)
+        {
+            return reports[terrorist][reports[terrorist].Count - 1];
+        }
 
 
         public static void AddReport(Terrorist terrorist, NewReport report)

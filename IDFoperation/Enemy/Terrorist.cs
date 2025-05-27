@@ -24,6 +24,19 @@ namespace IDFoperation.Enemy
  
         }
 
+        public void UpdateTerroristStatus()
+        {
+            if (this.Status == Enums.TerroristStatus.Alive)
+            {
+                this.Status = Enums.TerroristStatus.Dead;
+                HamasOrganization.terrorists.Remove(this);
+            }
+            else
+            {
+                this.Status = Enums.TerroristStatus.Alive;
+            }
+        }
+
         public void DisplayInfo()
         {
             Console.WriteLine($"Name of the terorist: {Name}");
