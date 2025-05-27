@@ -13,6 +13,7 @@ namespace IDFoperation.Aman.Exterior.Actions.Data
         public static Dictionary<Terrorist, List<NewReport>> reports = new Dictionary<Terrorist, List<NewReport>>();
         public static NewReport last;
 
+
         public static void AddReport(Terrorist terrorist, NewReport report)
         {
             if (! reports.ContainsKey(terrorist))
