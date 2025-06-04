@@ -15,7 +15,7 @@ namespace IDFoperation.Controller
     public static class Menages
     {
        
-        public static void Menage(OperationsOfficer operationsOfficer)
+        public static void Menage(OperationsOfficer operationsOfficer, IntelligenceResearcher intelligenceResearcher)
         {
             bool exit = false;
             do
@@ -42,7 +42,7 @@ namespace IDFoperation.Controller
                         break;
 
                     case "Attack":
-                        All.AttackTerrorist(operationsOfficer);
+                        All.AttackTerrorist(operationsOfficer, intelligenceResearcher);
                         break;
 
                     case "Exit":

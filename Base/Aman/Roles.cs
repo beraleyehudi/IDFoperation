@@ -32,6 +32,7 @@ namespace IDFoperation.IDF
             int successes = this.NumberOfSuccesses;
             if (successes > 0 && attempts > 0)
             {
+                
                 return (((100 / (double)attempts) * (double)successes) / 100) * (double)successes;
             }
             return 0;

@@ -14,6 +14,8 @@ namespace IDFoperation.AuxiliaryFunctions
 {
     public static class All
     {
+        public static string str = "ee";
+        string.C
         public static string Input(string inputMessage)
         {
             Console.WriteLine();
@@ -122,11 +124,12 @@ namespace IDFoperation.AuxiliaryFunctions
 
         }
 
-        public static Terrorist WantedTerrorist()
+        public static Terrorist WantedTerrorist(IntelligenceResearcher intelligenceResearcher)
         {
             string[] options = new string[]{
                 "The terrorist with the highest number of reports",
-                "The most dangerous terrorist"};
+                "The most dangerous terrorist",
+                  "alguritem"};
 
             string choice = PrintMenu("Who is being attacked today?", options);
 
@@ -134,20 +137,26 @@ namespace IDFoperation.AuxiliaryFunctions
             switch(choice)
             {
                 case "The terrorist with the highest number of reports":
+
                     return MostReports();
 
 
                 case "The most dangerous terrorist":
+
                     return MostDangerous();
+
+                case "alguritem":
+                    
+                    return SelectedTerrorist(intelligenceResearcher).terrorist;
 
             }
             return null;
 
         }
 
-        public static void AttackTerrorist(OperationsOfficer operationsOfficer)
+        public static void AttackTerrorist(OperationsOfficer operationsOfficer, IntelligenceResearcher intelligenceResearcher)
         {
-            Terrorist terrorist = WantedTerrorist();
+            Terrorist terrorist = WantedTerrorist(intelligenceResearcher);
             StrikeUnit strikeInit = ChoosingAttackTool();
             NewReport lastReport = Reports.GetlastReport(terrorist);
            
@@ -249,47 +258,7 @@ namespace IDFoperation.AuxiliaryFunctions
             }
         }
 
-        public static Terrorist[] ExperienecedIntelligene()
-        {
-          
-             List<Terrorist> terrorist = new List<Terrorist>();
-            foreach (KeyValuePair<Terrorist, List<NewReport>> keyValuePair in Reports.reports)
-            {
-                
-                double maxpoints = 0;
-                double pointCounter = 0;
-                foreach (NewReport report in keyValuePair.Value) // פשוט
-                {
-                    pointCounter += report.IntelligenceResearcher.QualityOfExperience();
-                    
-                }
-
-                for (int i = 0; i < keyValuePair.Value.Count; i ++) // לפי מיקום ברשימה
-                {
-                    pointCounter += ((i + 1)*(i + 1)) * keyValuePair.Value[i].IntelligenceResearcher.QualityOfExperience();
-                }
-
-
-                switch(pointCounter)
-                {
-                    case double q  when q > maxpoints:
-                        maxpoints = q;
-                        terrorist.Clear();
-                        terrorist.Add(keyValuePair.Key);
-                        break;
-
-                    case double q when q == maxpoints:
-                        terrorist.Add(keyValuePair.Key);
-                        break;
-
-
-                }
-
-            }
-            return terrorist.ToArray();
-        }
-
-        public static int differentresearchers(List<NewReport> reports)
+        public static int Differentresearchers(List<NewReport> reports)
         {
             Dictionary<IntelligenceResearcher, int> inteligenceResearchers = new Dictionary<IntelligenceResearcher, int>();
 
@@ -302,26 +271,126 @@ namespace IDFoperation.AuxiliaryFunctions
 
         }
 
-        public static int differentLocations(List<NewReport> reports)
-        {
-            Dictionary<Enums.LocationType, int> locations = new Dictionary<Enums.LocationType, int>();
 
+        // אינה מחזירה את מספר המיקומים השונה
+
+        public static int DifferentLocations(List<NewReport> reports)
+        {
+            Dictionary<Enums.LocationType, double> locations = new Dictionary<Enums.LocationType, double>();
             foreach (NewReport report in reports)
             {
                 locations[report.Location] = 0;
+
+
             }
-
             return locations.Count;
-
         }
 
 
 
+        public static Dictionary<Enums.LocationType, double> LocationData(List<NewReport> reports)
+        {
+            Dictionary<Enums.LocationType, double> locations = new Dictionary<Enums.LocationType, double>();
+
+            foreach (NewReport report in reports)
+            {
+                if (!locations.ContainsKey(report.Location))
+                {
+                locations[report.Location] = 0;
+
+                }
+                locations[report.Location] += report.IntelligenceResearcher.QualityOfExperience();
+            }
+            double max = 0;
+            Enums.LocationType location = Enums.LocationType.structur;
+
+            foreach (KeyValuePair<Enums.LocationType, double> keyValuePair in locations)
+            {
+                if (keyValuePair.Value > max)
+                {
+                    max = keyValuePair.Value;
+                    location = keyValuePair.Key;
+                }
+
+
+            }
+            
+
+            return new Dictionary<Enums.LocationType, double>() { { location, max } };
+
+        }
+
+        public static double CalculatoreLocation(int numberOfResearchers, int numberOfLocations, double locationPoints)
+        {
+            
+            return (100 / numberOfResearchers * numberOfLocations) * locationPoints;
+        }
+
+        public static double ReportsQuality(List<NewReport> reports)
+        {
+            double counter = 0;
+            foreach (NewReport report in reports)
+            {
+                counter += report.IntelligenceResearcher.QualityOfExperience();
+            }
+            
+            return counter;
+        }
+
+        public static double ReportingReliability(double reportsQuality, double locationPoints)
+        {
+            
+            return reportsQuality + locationPoints * locationPoints;
+        }
+
+
+        public static NewReport SelectedTerrorist(IntelligenceResearcher intelligenceResearcher)
+        {
+            Terrorist terrorist = null;
+            double maxpoints = 0;
+            Enums.LocationType currentLocation = Enums.LocationType.structur;
+            Enums.LocationType reallylocation = Enums.LocationType.structur;
+
+
+            foreach (KeyValuePair<Terrorist, List<NewReport>> keyValuePair in Reports.reports)
+            {
+                double locationValue = 0;
+                Dictionary<Enums.LocationType, double> locationData = LocationData(keyValuePair.Value);
+                foreach (KeyValuePair<Enums.LocationType, double> keyValuePair1 in locationData)
+                {
+                    currentLocation = keyValuePair1.Key;
+                    locationValue = keyValuePair1.Value;
+
+                }
+                keyValuePair.Key.DisplayInfo();
+                Console.WriteLine(ReportingReliability(ReportsQuality(keyValuePair.Value), locationValue));
+                if (ReportingReliability(ReportsQuality(keyValuePair.Value), locationValue) > maxpoints)
+                {
+                    maxpoints = ReportingReliability(ReportsQuality(keyValuePair.Value), locationValue);
+                    reallylocation = currentLocation;
+                    terrorist = keyValuePair.Key;
+                }
+
+                Console.WriteLine("SelectedTerrorist: ");
+                Console.WriteLine(maxpoints);
+            }
+
+            terrorist.DisplayInfo();
+            
+
+            return new NewReport(intelligenceResearcher, terrorist, reallylocation);
+
+        }
+                        
+
+                
 
 
 
 
 
+
+            
 
     }
     
@@ -331,6 +400,14 @@ namespace IDFoperation.AuxiliaryFunctions
 
 
 }
+
+
+
+
+
+
+
+
 
 
            

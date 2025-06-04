@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDFoperation.Enemy
 {
-    public class Enums{
+    public static class Enums{
         public enum WeaponType {
             Knife = 1,
             Gun = 2,

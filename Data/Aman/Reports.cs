@@ -17,6 +17,7 @@ namespace IDFoperation.Aman.Exterior.Actions.Data
             return reports[terrorist][reports[terrorist].Count - 1];
         }
 
+
         public static void AddReport(Terrorist terrorist, NewReport report)
         {
             if (! reports.ContainsKey(terrorist))
